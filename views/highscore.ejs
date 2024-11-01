@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Scores</title>
+    <link rel="stylesheet" href="/css/highscore.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>High Scores</h1>
+        <table id="highscore-table">
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Player Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% scores.forEach((score, index) => { %>
+                    <tr class="highscore-item">
+                        <td><%= index + 1 %></td>
+                        <td class="username"><%= score.username %></td>
+                        <td class="score"><%= score.score %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+        <button id="back-to-game-btn" onclick="window.location.href='/game?username=<%= username %>'">Back to Game</button>
+        <button id="clear-scores-btn">Clear Scores</button>
+    </div>
+    <script src="/js/highscore.js"></script> <!-- Link to highscore.js -->
+</body>
+</html>
