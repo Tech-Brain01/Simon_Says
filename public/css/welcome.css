@@ -1,101 +1,93 @@
-/* Body Styling */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    color: #ffffff; /* White text for contrast */
-    font-family: 'Poppins', sans-serif; /* Use a modern font */
-    background: linear-gradient(135deg, #1a1a2e, #16213e); /* Gradient background */
-    overflow: hidden; /* Hide overflow for animation */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  overflow: hidden;
 }
 
-/* Animation for background */
 @keyframes backgroundAnimation {
-    0% {
-        background-color: #1a1a2e;
-    }
-    50% {
-        background-color: #0f0c29; /* Dark purple */
-    }
-    100% {
-        background-color: #1a1a2e;
-    }
+  0% {
+    background-color: #1a1a2e;
+  }
+  50% {
+    background-color: #0f0c29;
+  }
+  100% {
+    background-color: #1a1a2e;
+  }
 }
 
 body {
-    animation: backgroundAnimation 10s infinite alternate; /* Continuous background animation */
+  animation: backgroundAnimation 10s infinite alternate;
 }
 
-/* Main Container */
 .main {
-    text-align: center; /* Center-align text */
-    position: relative; /* Position for absolute elements */
+  text-align: center;
+  position: relative;
 }
 
-/* Box Styling */
 .box {
-    background-color: rgba(22, 33, 62, 0.9); /* Semi-transparent dark blue box background */
-    padding: 20px 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth scaling and shadow transition */
+  background-color: rgba(22, 33, 62, 0.9);
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Scale Up on Hover */
 .box:hover {
-    transform: scale(1.05); /* Slightly increase the scale on hover */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); /* Increased shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
 }
 
-/* Input Field Styling */
 input[type="text"] {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 2px solid #ff6b6b; /* Border color */
-    font-size: 16px;
-    transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth transition for border color */
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 2px solid #ff6b6b;
+  font-size: 16px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
 input[type="text"]:focus {
-    border-color: #ff4b4b; /* Change border color on focus */
-    transform: scale(1.02); /* Slightly scale on focus */
+  border-color: #ff4b4b;
+  transform: scale(1.02);
 }
 
-/* Button Styling */
 button {
-    background-color: #ff6b6b; /* Button color */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.4s ease, transform 0.3s ease; /* Transition for button */
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.4s ease, transform 0.3s ease;
 }
 
 button:hover {
-    background-color: #ff4b4b; /* Change color on hover */
-    transform: translateY(-4px) scale(1.05); /* Slightly lift and scale the button */
+  background-color: #ff4b4b;
+  transform: translateY(-4px) scale(1.05);
 }
 
 button:active {
-    background-color: #ff2b2b; /* Change color when active */
-    transform: translateY(0); /* Reset position on click */
+  background-color: #ff2b2b;
+  transform: translateY(0);
 }
 
-/* Typography */
 h1 {
-    font-size: 48px; /* Larger title */
-    margin-bottom: 10px; /* Add some margin for spacing */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 p {
-    color: #dddddd; /* Light grey for text */
-    font-size: 24px; /* Larger font size for better readability */
-    margin-bottom: 20px; /* Add spacing below the paragraph */
+  color: #dddddd;
+  font-size: 24px;
+  margin-bottom: 20px;
 }

@@ -136,15 +136,11 @@ resetBtn.addEventListener("click", () => {
   }
 });
 
-// Assuming `username` is available in the scope where this code is running
-
 highscorebtn.addEventListener("click", () => {
-  const urlParams = new URLSearchParams(window.location.search); // Get the current URL parameters
-  const username = urlParams.get('username'); // Extract the username from the URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const username = urlParams.get("username");
 
   if (confirm(`Are you sure you want to leave the game?`)) {
-    // Redirect to the high score page with the username as a query parameter
     window.location.href = `/highscorepage?username=${username}`;
   }
 });
-
